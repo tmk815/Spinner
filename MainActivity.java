@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int position, long id) {
                 Spinner spinner = (Spinner) parent;
+                
+                //この１行を追加
+                adapter2.clear();
+                
                 // 選択されたアイテムを取得します
                 String item = (String) spinner.getSelectedItem();
                 if (item.equals("漢字")){
